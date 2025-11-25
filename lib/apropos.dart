@@ -22,6 +22,11 @@ class AproposPage extends StatelessWidget {
               style: TextStyle(fontSize: 30, color: Colors.blueAccent),
               textAlign: TextAlign.center,
             ),
+            SizedBox(height: 300),
+            Text(
+              'N oubliez vos actions, meme les plus petites sont une source de motivation pour certain.',
+              style: TextStyle(fontSize: 15, color: Colors.grey),
+            ),
           ],
         ),
       ),
