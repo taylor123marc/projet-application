@@ -1,4 +1,4 @@
 # flutter_application_vote_don
 
-A new Flutter project.
+Application de vote et de don
 # projet-application
