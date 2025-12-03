@@ -12,6 +12,11 @@ class AccueilPage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/images/1.png', height: 150),
+            Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
+             
+          ],
         
         ),
       ),
