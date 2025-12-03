@@ -17,6 +17,8 @@ class AccueilPage extends StatelessWidget {
             Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
             SizedBox(height: 30),
             ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  VotePage())), child:  Text('Voter')),
+            SizedBox(height: 20),
+            ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  DonPage())), child:  Text('Faire un don')),
              
           ],
         
