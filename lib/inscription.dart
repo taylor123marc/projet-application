@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'connexion.dart';
 
 
 class InscriptionPage extends StatefulWidget {
