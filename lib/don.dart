@@ -10,6 +10,7 @@ class DonPage extends StatefulWidget {
 }
 
 class _DonPageState extends State<DonPage> {
+  final TextEditingController _controller = TextEditingController();
   
 
   @override
