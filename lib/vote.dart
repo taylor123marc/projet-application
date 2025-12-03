@@ -21,6 +21,8 @@ class _VotePageState extends State<VotePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Image.asset('assets/images/${candidats[i].toLowerCase()}.jpg', width: 80, height: 80),
+                   SizedBox(width: 20),
                   Text(candidats[i], style:  TextStyle(fontSize: 22, color: Colors.white)),
                    SizedBox(width: 20),
                   ElevatedButton(onPressed: () { setState(() { votes[i]++; }); }, child:  Text('Voter')),
