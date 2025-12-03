@@ -21,6 +21,8 @@ class AccueilPage extends StatelessWidget {
             ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  DonPage())), child:  Text('Faire un don')),
             SizedBox(height: 20),
             ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  ResultatsPage())), child: Text('Résultats')),
+            SizedBox(height: 20),
+            ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  AproposPage())), child: Text('À propos')),
              
           ],
         
