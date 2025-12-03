@@ -22,6 +22,11 @@ class _DonPageState extends State<DonPage> {
         padding:  EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/images/9.jpeg', height: 150),
+             SizedBox(height: 20),
+            
+          ],
          
         ),
       ),
