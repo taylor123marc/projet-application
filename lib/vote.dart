@@ -18,6 +18,15 @@ class _VotePageState extends State<VotePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             for (int i = 0; i < candidats.length; i++) ...[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(candidats[i], style:  TextStyle(fontSize: 22, color: Colors.white)),
+                   SizedBox(width: 20),
+                  ElevatedButton(onPressed: () { setState(() { votes[i]++; }); }, child:  Text('Voter')),
+                ],
+              ),
+               SizedBox(height: 20),
             ],
           ],
         ),
