@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'vote.dart';
+import 'don.dart';
+import 'resultats.dart';
+import 'apropos.dart';
 
 
 class AccueilPage extends StatelessWidget {
