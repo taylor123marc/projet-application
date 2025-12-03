@@ -22,6 +22,13 @@ class _InscriptionPageState extends State<InscriptionPage> {
           children: [
              Image.asset('assets/images/1.png', height: 150),
              Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
+            TextField(controller: _nomController, decoration:  InputDecoration(labelText: 'Nom', filled: true, fillColor: Colors.white)),
+             SizedBox(height: 20),
+            TextField(controller: _emailController, decoration:  InputDecoration(labelText: 'Email', filled: true, fillColor: Colors.white)),
+             SizedBox(height: 20),
+            TextField(controller: _passwordController, obscureText: true, decoration:  InputDecoration(labelText: 'Mot de passe', filled: true, fillColor: Colors.white)),
+             SizedBox(height: 30),
+
           
           ],
         ),
