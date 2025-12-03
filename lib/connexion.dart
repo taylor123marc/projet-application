@@ -29,6 +29,12 @@ class _ConnexionPageState extends State<ConnexionPage> {
              SizedBox(height: 20),
             TextField(controller: _passwordController, obscureText: true, decoration:  InputDecoration(labelText: 'Mot de passe', filled: true, fillColor: Colors.white)),
              SizedBox(height: 30),
+                ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => AccueilPage()));
+              },
+              child:  Text('Se connecter'),
+            ),
           ],
         ),
       ),
