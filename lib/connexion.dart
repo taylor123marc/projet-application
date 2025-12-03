@@ -1,10 +1,32 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+
+class ConnexionPage extends StatefulWidget {
+   ConnexionPage({super.key});
+
+  @override
+  State<ConnexionPage> createState() => _ConnexionPageState();
+}
+
+class _ConnexionPageState extends State<ConnexionPage> {
+  
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      appBar: AppBar(title:  Text('Connexion')),
+      body: Padding( 
+        padding:  EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+             Image.asset('assets/images/1.png', height: 150),
+              Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
+             SizedBox(height: 30),
+          ],
+        ),
+      ),
+    );
   }
 }
