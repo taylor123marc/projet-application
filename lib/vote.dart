@@ -16,6 +16,10 @@ class _VotePageState extends State<VotePage> {
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            for (int i = 0; i < candidats.length; i++) ...[
+            ],
+          ],
         ),
       ),
     );
