@@ -31,6 +31,12 @@ class _InscriptionPageState extends State<InscriptionPage> {
              SizedBox(height: 20),
             TextField(controller: _passwordController, obscureText: true, decoration:  InputDecoration(labelText: 'Mot de passe', filled: true, fillColor: Colors.white)),
              SizedBox(height: 30),
+              ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>  ConnexionPage()));
+              },
+              child:  Text('S inscrire'),
+            ),
 
           
           ],
