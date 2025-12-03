@@ -14,6 +14,17 @@ class ResultatsPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
              Text('Votes par candidat:', style: TextStyle(fontSize: 22, color: Colors.white)),
+             for (int i = 0; i < candidats.length; i++) ...[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('assets/images/${candidats[i].toLowerCase()}.jpg', width: 60, height: 60),
+                   SizedBox(width: 10),
+                  Text('${candidats[i]} : ${votes[i]} votes', style:  TextStyle(fontSize: 18, color: Colors.white)),
+                ],
+              ),
+               SizedBox(height: 20),
+            ],
             
              SizedBox(height: 30),
             Text('Total des dons : ${totalDon.toStringAsFixed(2)} FCFA', style: TextStyle(fontSize: 20, color: Colors.white)),
