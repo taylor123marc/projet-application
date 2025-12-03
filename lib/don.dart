@@ -25,6 +25,8 @@ class _DonPageState extends State<DonPage> {
           children: [
             Image.asset('assets/images/9.jpeg', height: 150),
              SizedBox(height: 20),
+             TextField(controller: _controller, keyboardType: TextInputType.number, decoration:  InputDecoration(labelText: 'Montant en FCFA', filled: true, fillColor: Colors.white)),
+            SizedBox(height: 20),
             
           ],
          
