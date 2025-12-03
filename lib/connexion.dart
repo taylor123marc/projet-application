@@ -24,6 +24,11 @@ class _ConnexionPageState extends State<ConnexionPage> {
              Image.asset('assets/images/1.png', height: 150),
               Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
              SizedBox(height: 30),
+             
+            TextField(controller: _emailController, decoration:  InputDecoration(labelText: 'Email', filled: true, fillColor: Colors.white)),
+             SizedBox(height: 20),
+            TextField(controller: _passwordController, obscureText: true, decoration:  InputDecoration(labelText: 'Mot de passe', filled: true, fillColor: Colors.white)),
+             SizedBox(height: 30),
           ],
         ),
       ),
