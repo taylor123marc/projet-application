@@ -15,6 +15,8 @@ class AccueilPage extends StatelessWidget {
           children: [
             Image.asset('assets/images/1.png', height: 150),
             Text('Dans le Van',style: TextStyle(fontSize: 28, color: Colors.white)),
+            SizedBox(height: 30),
+            ElevatedButton(onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) =>  VotePage())), child:  Text('Voter')),
              
           ],
         
